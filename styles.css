@@ -34,3 +34,14 @@ body {
 .block--gray {
   background-color: gray;
 }
+/* #animate {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+} */
+#container {
+  width: 800px;
+  height: 700px;
+  position: relative;
+}
