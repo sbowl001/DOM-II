@@ -1,21 +1,27 @@
-// const div1 = document.getElementById("1");
-// const div2 = document.getElementById("2");
-// const div3 = document.getElementById("3");
-// const div4 = document.getElementById("4");
-// const div5 = document.getElementById("5");
+const red = document.getElementById("1");
+const blue = document.getElementById("2");
+const green = document.getElementById("3");
+const pink = document.getElementById("4");
+const gray = document.getElementById("5");
+
+const el = document.querySelector(".blocks");
+
+el.addEventListener("click", event => {
+  console.log("it worked", event);
+  theParent = document.getElementById("theParent").parentNode;
+  theKid = document.createElement("div");
+  theKid.innerHTML = "Worked";
+  event.target.insertBefore(theKid, event.target.firstChild);
+});
 
 
-var el = function() {
-  var divs = document.getElementsByTagName('div');
-  var div1 = divs[0];
-  var div2 = divs[1];
-  var div3 = divs[2];
-  var div4 = divs[3];
-  var div5 = divs[4];
-  el.addEventListener( 'click', (e) => {
-    el.target.parentNode.insertBefore(div1, div2);
-  }
-)};
+
+// theParent = document.getElementById("theParent");
+// theParent = document.getElementById("1").parentNode
+// theKid = document.createElement("div");
+// theKid.innerHTML = 'worked?';
+// theParent.insertBefore(theKid, theParent.firstChild);
+
    // const el= document.querySelectorAll("block");
   // el.addEventListener('click', (e)=> {
   // el.target.insertBefore(div1);
